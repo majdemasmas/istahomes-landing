@@ -8,14 +8,14 @@
     <link rel="shortcut icon" href="./images/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png">
     <link rel="icon" type="image/png" href="./images/favicon.png" sizes="32x32">
-    <meta name="description" content="Exclusive 3 and 4 Bedroom Townhouses in The Valley Phase 2">
+    <meta name="description" content="Jumeirah Village Triangle (JVT)">
     <meta name='author' content="majdemasmas" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0073bc">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="{{ asset('public/new-landings/velora-venera/images/header-image.webp') }}" />
+    <meta property="og:image" content="./images/image-1.webp" />
     <meta property="og:title" content="Guzel Towers | ISTHOMES" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Jumeirah Village Triangle (JVT)" />
     <title>Guzel Towers | ISTHOMES</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
     </noscript>
     <link rel="stylesheet" href="./style.css">
 
-    <link rel="preload" as="image" fetchpriority="high" href="" />
+    <!-- <link rel="preload" as="image" fetchpriority="high" href="" /> -->
 </head>
 
 <body>
@@ -87,26 +87,23 @@
                 </div>
             </div>
 
-            <a class="primary-btn" href="#contactSection">
+            <button class="primary-btn" data-toggle="modal" data-target=".contact-modal">
                 CHECK THE AVAILABILITY
-            </a>
+            </button>
         </div>
     </section>
 
-    <section class="why-project py-4 py-lg-5">
+    <section class="why-project">
         <div class="container">
+            <h2 class="main-title mb-4 mb-lg-5"> THE COMMUNITY </h2>
             <div class="row">
-                <div class="col-12">
-                    <h2 class="main-title mb-4 mb-lg-5"> THE COMMUNITY </h2>
-                </div>
-
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-lg-0">
                     <h3 class="mb-4 h4 font-weight-bold"> Why JVT? </h3>
                     <p class="info"> 
                         Jumeirah Lake Towers (JLT) offers a vibrant urban lifestyle with serene waterfront views. Featuring a mix of apartments, offices, and retail spaces, it’s perfect for professionals and families alike. Surrounded by lush landscapes and lakes, JLT provides easy access to key destinations, blending convenience with a peaceful environment in the heart of Dubai.
                     </p>
                 </div>
-                <div class="col-lg-6"> <img class="w-100 blur-up lazyloaded"
+                <div class="col-lg-6 order-0 order-lg-1 mb-4 mb-lg-0"> <img class="w-100 blur-up lazyloaded"
                         alt="wyh image"
                         src="./images/why-image.webp">
                 </div>
@@ -114,16 +111,203 @@
         </div>
     </section>
 
+    <section class="living pt-4 pt-lg-5">
+        <div class="container">
+            <h2 class="main-title mb-4">
+                Facilities
+            </h2>
+            <div class="list d-flex my-4">
+                <div class="item">
+                    <img src="./images/1.webp" alt="Swimming Pool">
+                    <p class="info">
+                        Swimming Pool
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./images/2.webp" alt="BBQ Area">
+                    <p class="info">
+                        BBQ Area
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./images/3.webp" alt="Gym & Health Club">
+                    <p class="info">
+                        Gym & Health Club
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./images/4.webp" alt="Jogging Track">
+                    <p class="info">
+                        Jogging Track
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./images/5.webp" alt="Kids Play Area">
+                    <p class="info">
+                        Kids Play Area
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./images/6.webp" alt="Jacuzzi & Spa">
+                    <p class="info">
+                        Jacuzzi & Spa
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="images-section pb-4 pb-lg-5">
+        <div class="container">
+            <div class="list">
+                <img class="lazyload blur-up" data-src="./images/image-1.webp" alt="image 1">
+                <img class="lazyload blur-up" data-src="./images/image-2.webp" alt="image 2">
+                <img class="lazyload blur-up" data-src="./images/image-3.webp" alt="image 3">
+                <img class="lazyload blur-up" data-src="./images/image-4.webp" alt="image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contactUs" class="contact-section">
+        <div class="container">
+            <div class="contain">
+                <h2 class="text-center title mb-1">Let us connect with you</h2>
+                <p class="text-center mb-4 info">let us choose what suits you</p>
+                <form class="contact-form">
+                    <input type="text" name="utm_source" value="desktopFooterForm" hidden>
+                    <input type="text" name="utm_campaign" value="Guzel Towers - En" hidden>
+                    <input type="hidden" name="do" value="send">
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6 px-lg-1">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name"
+                                    autocomplete="off" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+
+                            <div class="form-group mb-lg-0">
+                                <input type="tel" name="phone" class="form-control NumericOnly phoneInput"
+                                    placeholder="Phone Number" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 px-lg-1">
+                            <div class="form-group h-100">
+                                <textarea name="description" class="form-control" placeholder="Massage"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-column-center px-lg-1">
+                            <button type="submit" class="btn-send submit-form font-weight-bold btn-block">
+                                <span>Send</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copy-right">
+        <div class="container">
+            <p class="mb-0 py-2 text-capitalize"> All rights reserved to ISTHomes © 2025 </p>
+        </div>
+    </div>
+
+    <div class="fixed-whatsapp-bottom">
+        <a aria-label="call with us" target="_blank"
+            href="https://api.whatsapp.com/send?phone=971506704072&text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20real%20estate%20investment%20in%20Dubai%0Ahttps%3A%2F%2FLandingPage%2F">
+            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24.9945" cy="25.5" rx="24.5179" ry="25" fill="#30B700"></ellipse>
+                <path
+                    d="M33.8977 16.416C32.7032 15.1918 31.2805 14.2213 29.7124 13.5609C28.1444 12.9004 26.4624 12.5634 24.7646 12.5694C17.651 12.5694 11.8533 18.4516 11.8533 25.6688C11.8533 27.982 12.4526 30.2291 13.573 32.2119L11.749 39.0061L18.5891 37.182C20.4782 38.2262 22.6019 38.7814 24.7646 38.7814C31.8783 38.7814 37.676 32.8992 37.676 25.682C37.676 22.1792 36.3341 18.8878 33.8977 16.416ZM24.7646 36.5607C22.8364 36.5607 20.9472 36.032 19.2926 35.0406L18.9017 34.8027L14.8368 35.8866L15.9182 31.8682L15.6576 31.4584C14.5863 29.7228 14.0175 27.7166 14.016 25.6688C14.016 19.6677 18.8366 14.7769 24.7516 14.7769C27.6179 14.7769 30.3148 15.9137 32.3343 17.9757C33.3342 18.9856 34.1266 20.1867 34.6656 21.5095C35.2046 22.8324 35.4794 24.2506 35.4742 25.682C35.5002 31.6832 30.6796 36.5607 24.7646 36.5607ZM30.6536 28.4182C30.3279 28.2596 28.7384 27.4665 28.4517 27.3475C28.1521 27.2418 27.9436 27.1889 27.7221 27.5062C27.5006 27.8366 26.8883 28.5768 26.7059 28.7883C26.5235 29.013 26.3281 29.0395 26.0023 28.8676C25.6766 28.709 24.6343 28.3521 23.4096 27.2418C22.4455 26.3694 21.8071 25.2987 21.6117 24.9682C21.4293 24.6378 21.5856 24.4659 21.755 24.2941C21.8983 24.1487 22.0807 23.9108 22.2371 23.7257C22.3934 23.5406 22.4586 23.3952 22.5628 23.1838C22.667 22.959 22.6149 22.774 22.5367 22.6154C22.4586 22.4567 21.8071 20.8441 21.5466 20.1832C21.286 19.5487 21.0124 19.628 20.817 19.6148H20.1916C19.9701 19.6148 19.6313 19.6941 19.3317 20.0246C19.0451 20.355 18.2112 21.1481 18.2112 22.7608C18.2112 24.3734 19.3708 25.9332 19.5271 26.1447C19.6835 26.3694 21.8071 29.674 25.0382 31.0883C25.8069 31.432 26.4062 31.6303 26.8753 31.7757C27.644 32.0268 28.3475 31.9872 28.9077 31.9079C29.5331 31.8153 30.8229 31.1148 31.0835 30.3481C31.3571 29.5814 31.3571 28.9337 31.2659 28.7883C31.1747 28.6429 30.9793 28.5768 30.6536 28.4182Z"
+                    fill="white"></path>
+            </svg>
+        </a>
+    </div>
+
+    <div class="fixed-modal-button">
+        <button class="order-now show-modal d-flex align-items-center px-3" data-form="marmaraSeashells" data-toggle="modal"
+            data-target=".contact-modal">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="35px" fill="#fff"
+                viewBox="0 0 1024 1024" version="1.1">
+                <path d="M512 64C229.2 64 0 250.2 0 480c0 99.2 42.8 190 114 261.4C89 842.2 5.4 932 4.4 933c-4.4 4.6-5.6 11.4-3 17.4S9.6 960 16 960c132.6 0 232-63.6 281.2-102.8 65.4 24.6 138 38.8 214.8 38.8 282.8 0 512-186.2 512-416S794.8 64 512 64z m128 266.4c29.6 0 53.6 24 53.6 53.6s-24 53.6-53.6 53.6-53.6-24-53.6-53.6 24-53.6 53.6-53.6z m-256 0c29.6 0 53.6 24 53.6 53.6s-24 53.6-53.6 53.6-53.6-24-53.6-53.6 24-53.6 53.6-53.6z m328.4 281.8C662.6 670.6 589.6 704 512 704c-77.6 0-150.6-33.4-200.4-91.8-11.6-13.4-10-33.6 3.6-45 13.4-11.4 33.6-10 45 3.6 37.6 44 93 69.2 151.6 69.2 58.8 0 114-25.2 151.6-69.4 11.6-13.4 31.8-15 45.2-3.6 13.6 11.6 15.2 31.8 3.8 45.2z" />
+            </svg>
+            <span style="width: max-content;display: flex;white-space: nowrap;font-size: 18px;">Free Consultation</span>
+        </button>
+    </div>
+
+    <div class="modal contact-modal modal-fullscreen" id="contactModal" tabindex="-1" role="dialog"
+        aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mt-4 mt-lg-5">
+                <div class="text-center title">Let us connect with you</div>
+                <p class="text-center mb-3 info">let us choose what suits you</p>
+                <form class="contact-form">
+                    <input type="text" name="utm_source" value="modalForm" hidden>
+                    <input type="text" name="utm_campaign" value="Dubai Landing - En" hidden>
+                    <input type="hidden" name="do" value="send">
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6 px-lg-1">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name"
+                                    autocomplete="off" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+
+                            <div class="form-group mb-lg-0">
+                                <input type="tel" name="phone" class="form-control NumericOnly phoneInput"
+                                    placeholder="Phone Number" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 px-lg-1">
+                            <div class="form-group h-100">
+                                <textarea name="description" class="form-control" placeholder="Massage"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-column-center px-lg-1">
+                            <button type="submit" class="btn-send submit-form font-weight-bold btn-block">
+                                <span>Send</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal thanks-modal modal-fullscreen" id="thanksModal" tabindex="-1" role="dialog"
+        aria-labelledby="thanksModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mt-4 mt-lg-5 p-4">
+                <div class="text-center title">
+                    Your request has been received, Our team will contact you as soon as possible
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button data-dismiss="modal" class="order-now mt-4" aria-label="Close">
+                        close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
     <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" crossorigin="anonymous" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/js/intlTelInput-jquery.min.js"
-        defer></script>
-    <script>
-        var vid = document.getElementById("headerVideo");
-        vid.muted = true;
-        vid.autoPlay = true;
-        vid.play()
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/js/intlTelInput-jquery.min.js" defer></script>
+    <script src="./scripts.js" defer></script>
 </body>
 
 </html>
