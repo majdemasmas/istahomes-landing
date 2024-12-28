@@ -551,13 +551,15 @@ header .contain .crypto svg path {
   header .contain {
     position: absolute;
     left: 0%;
+    top: 55%;
+    width: 100%;
   }
   header .contain h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   header .contain p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
   header .contain ul li {
