@@ -1,9 +1,4 @@
 $(document).ready(function () {
-  var vid = document.getElementById("headerVideo");
-  vid.muted = true;
-  vid.autoPlay = true;
-  vid.play()
-
   $('.phoneInput').intlTelInput({
     utilsScript:
       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.min.js",
@@ -80,7 +75,7 @@ $(document).ready(function () {
       validNum = $this.find("input[name=phone]").intlTelInput("isValidNumber"),
       data = {
         'do': emailDo,
-        'test' : 1,
+        // 'test' : 1,
         'utm_source': utm_source,
         'utm_campaign': utm_campaign,
         'utm_source': utm_source,

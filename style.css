@@ -106,6 +106,7 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
+  max-height: 800px;
   aspect-ratio: 19/6;
 }
 header .video-overlay {
@@ -118,7 +119,7 @@ header .video-overlay {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
-header video {
+header img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -126,8 +127,10 @@ header video {
   right: 0;
   width: 100%;
   height: 100vh;
+  max-height: 800px;
   object-fit: cover;
   z-index: 0;
+  border-radius: 0 !important;
 }
 header .contain {
   position: absolute;
@@ -140,32 +143,45 @@ header .contain {
   color: #ffffff;
 }
 header .contain h1 {
-  font-size: 2vw;
+  font-size: 2.4vw;
   font-weight: bold;
+  margin-bottom: 1vw;
 }
 header .contain p {
-  font-size: 3.1vw;
+  font-size: 1.8vw;
   font-weight: bold;
+  margin-bottom: 1vw;
 }
-header .contain span {
-  font-size: 1.9vw;
+header .contain ul li {
+  font-size: 1.7vw;
+  margin-bottom: 1vw;
 }
-header .contain .crypto {
-  margin-top: 1vw;
-  padding: 1.5vw;
-  border-radius: 1vw;
-  background: #0073bc;
+header .contain ul li svg {
+  width: 2vw;
+  height: auto;
+}
+header .contain button {
+  padding: 0.7vw 1.7vw;
+  border-radius: 0.4vw;
+  background: #7b7b7b;
   color: #ffffff;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.2vw;
   width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 0;
+}
+header .contain button:focus {
+  outline: none;
+}
+header .contain .crypto {
+  background: #0073bc;
 }
 header .contain .crypto svg {
-  width: 16vw;
-  margin-top: -3.5vw;
+  width: 10vw;
+  margin-top: -2vw;
 }
 header .contain .crypto svg path {
   stroke: red;
@@ -205,7 +221,7 @@ header .contain .crypto svg path {
   width: 30%;
   margin: 1vw 1.5%;
   display: flex;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -222,7 +238,24 @@ header .contain .crypto svg path {
 }
 
 .why-project .info {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
+}
+.why-project .h2 {
+  font-size: 1.25vw;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #0073bc;
+  margin-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.why-project .h2 svg {
+  width: 1.5vw;
+  height: 1.5vw;
+  fill: #0073bc;
+}
+.why-project .h2 span {
+  width: calc(100% - 1.8vw);
 }
 
 .living .list {
@@ -326,7 +359,7 @@ header .contain .crypto svg path {
   background: #7b7b7b;
   color: #ffffff;
   padding: 0.6rem 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .copy-right p {
   margin-bottom: 0.3rem;
@@ -481,26 +514,38 @@ header .contain .crypto svg path {
     border-radius: 10px;
     font-size: 1.2rem;
   }
+  header {
+    max-height: 550px;
+  }
+  header img {
+    max-height: 550px;
+  }
   header .contain {
     position: absolute;
     left: 0%;
   }
   header .contain h1 {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   header .contain p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
-  header .contain span {
-    font-size: 1.1rem;
-  }
-  header .contain .crypto {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    border-radius: 6px;
-    background: #0073bc;
-    color: #ffffff;
+  header .contain ul li {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  header .contain ul li svg {
+    width: 20px;
+  }
+  header .contain button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    min-width: 200px;
+    align-items: center;
   }
   header .contain .crypto svg {
     width: 150px;
@@ -530,6 +575,18 @@ header .contain .crypto svg path {
   }
   .why-project .info {
     font-size: 1rem;
+  }
+  .why-project .h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  .why-project .h2 svg {
+    width: 20px;
+    height: 20px;
+  }
+  .why-project .h2 span {
+    width: calc(100% - 25px);
   }
   .living .list {
     flex-wrap: wrap;
