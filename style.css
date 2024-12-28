@@ -187,6 +187,7 @@ header .contain button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: 0;
 }
 header .contain button:focus {
@@ -701,6 +702,44 @@ header .contain .crypto svg path {
 [dir=rtl] .iti--separate-dial-code .iti__flag-container {
   right: auto;
   left: 0;
+}
+
+body.rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+}
+body.rtl .fixed-modal-button {
+  right: unset;
+  left: 90px;
+}
+body.rtl .fixed-whatsapp-bottom {
+  right: unset;
+  left: 25px;
+}
+body.rtl header .logo {
+  left: unset;
+  right: 10%;
+}
+body.rtl header .contain {
+  left: unset;
+  right: 10%;
+}
+@media (max-width: 1199.98px) {
+  body.rtl header .logo {
+    left: 50% !important;
+    right: unset;
+  }
+  body.rtl header .contain {
+    left: unset;
+    right: 0;
+  }
+}
+@media (max-width: 576px) {
+  body.rtl .intl-tel-input .country-list {
+    left: 50px;
+    right: unset;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

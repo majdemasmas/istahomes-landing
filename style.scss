@@ -200,6 +200,7 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             border: 0;
             &:focus{
                 outline: none;
@@ -795,4 +796,51 @@ header{
 [dir="rtl"] .iti--separate-dial-code .iti__flag-container {
     right: auto;
     left: 0;
+}
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: "Cairo", sans-serif;
+    .fixed-modal-button {
+        right: unset;
+        left: 90px;
+    }
+
+    .fixed-whatsapp-bottom {
+        right: unset;
+        left: 25px;
+    }
+
+    header{
+        .logo{
+            left: unset;
+            right: 10%;
+        }
+    
+        .contain{
+            left: unset;
+            right: 10%;
+        }
+    }
+
+    @media (max-width:1199.98px) {
+        header{
+            .logo{
+                left: 50% !important;
+                right: unset;
+            }
+            .contain{
+                left: unset;
+                right: 0;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .intl-tel-input .country-list {
+            left: 50px;
+            right: unset;
+        }
+    }
 }
